@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
 
 setuptools.setup(
-    name="cert-session-vzw",
+    name="cert_session",
     version="0.0.1",
     author="Lawrence Siden",
     author_email="lsiden@gmail.com",
