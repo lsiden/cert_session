@@ -6,7 +6,7 @@ from collections import deque
 
 import requests
 
-from cert_session.cert_session import Session, _create_certifi_temp
+from cert_session import Session, _create_certifi_temp
 
 
 def get_lines_from_file(path):
