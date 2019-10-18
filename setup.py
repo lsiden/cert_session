@@ -13,7 +13,7 @@ setuptools.setup(
     description="'requests' session that appends custom certificate authority",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/lsiden/cert_session",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

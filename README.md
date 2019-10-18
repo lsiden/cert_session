@@ -15,7 +15,7 @@ as well as the certificate collection provided by **certifi**.
 
 ## Installation
 
-    pip install https://gitlab.verizon.com/sidenla/certsession.git
+    pip install cert_session
 
 ## Usage
 

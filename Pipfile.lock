@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5bdacd36271aa546fbf82afcc9f01570fecfc840b3123528f9d194e6155d0713"
+            "sha256": "44897ebc8eb2ee1ca0b5e8724e8d5fc046c6aa696917c819266b813d45379800"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,9 +16,6 @@
         ]
     },
     "default": {
-        "cert-session": {
-            "path": "."
-        },
         "certifi": {
             "hashes": [
                 "sha256:e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50",
