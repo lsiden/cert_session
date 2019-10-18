@@ -2,7 +2,7 @@
 
 ## Background
 
-http://westside-consulting.blogspot.com/2019/10/certsession.html
+[http://westside-consulting.blogspot.com/2019/10/certsession.html](http://westside-consulting.blogspot.com/2019/10/certsession.html)
 
 ## Summary
 
