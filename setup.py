@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cert_session",
-    version="0.0.1",
+    version="0.0.2",
     author="Lawrence Siden",
     author_email="lsiden@gmail.com",
     description="'requests' session that appends custom certificate authority",
