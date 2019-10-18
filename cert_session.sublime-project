@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/home/larry/projects/test_cert_session"
 		}
 	]
 }
