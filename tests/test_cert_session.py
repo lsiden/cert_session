@@ -49,10 +49,39 @@ def test_create_certifi_temp(cert_path):
     os.unlink(tmp_path)
 
 
-def test_cert_session(cert_path):
+def test_cert_session_exit(cert_path):
     sess = Session(cert_path)
     assert sess
     assert isinstance(sess, type(requests.session()))
+    assert sess == sess.__enter__()
+
+    path = sess.verify
+    assert os.path.exists(path)
+
+    sess.__exit__(None, None, None)
+    assert not os.path.exists(path)
+
+
+def test_cert_session_exit_with_exception(cert_path):
+    sess = Session(cert_path)
+    assert sess
+    assert isinstance(sess, type(requests.session()))
+    assert sess == sess.__enter__()
+
+    path = sess.verify
+    assert os.path.exists(path)
+
+    sess.__exit__(Exception, None, None)
+    assert os.path.exists(path)
+
+    os.unlink(path)
+
+
+def test_cert_session_del(cert_path):
+    sess = Session(cert_path)
+    assert sess
+    assert isinstance(sess, type(requests.session()))
+    assert sess == sess.__enter__()
 
     path = sess.verify
     assert os.path.exists(path)
