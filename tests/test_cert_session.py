@@ -75,16 +75,3 @@ def test_cert_session_exit_with_exception(cert_path):
     assert os.path.exists(path)
 
     os.unlink(path)
-
-
-def test_cert_session_del(cert_path):
-    sess = Session(cert_path)
-    assert sess
-    assert isinstance(sess, type(requests.session()))
-    assert sess == sess.__enter__()
-
-    path = sess.verify
-    assert os.path.exists(path)
-
-    sess.__del__()
-    assert not os.path.exists(path)

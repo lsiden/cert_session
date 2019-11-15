@@ -38,11 +38,7 @@ class Session(requests.Session):
         else:
             os.unlink(self.verify)
 
-        super().__exit__()
-
-
-    def __del__(self):
-        os.unlink(self.verify)
+        return super().__exit__(exc_type, exc_value, traceback)
 
 
 def _create_certifi_temp(certs_filepath):
