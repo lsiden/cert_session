@@ -29,7 +29,7 @@ class Session(requests.Session):
         if hasattr(super(), '__enter__'):
             return super().__enter__()
 
-        return self
+        return super().__enter__()
 
 
     def __exit__(self, exc_type, exc_value, traceback):  # pylint: disable=arguments-differ
